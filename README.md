@@ -30,3 +30,22 @@ The app bundle is created at:
 ```text
 build/Pomodoro.app
 ```
+
+## Project structure
+
+```text
+Sources/PomodoroApp
+├── App                 # SwiftUI app entry point and app-level scenes
+├── Core
+│   ├── Domain          # Models, statistics, achievements, and scheduling rules
+│   └── Services        # Runtime abstractions such as ticking and feedback
+├── Data
+│   └── Persistence     # UserDefaults-backed storage
+├── DesignSystem        # Shared theme and reusable UI components
+└── Features
+    ├── Achievements    # Achievement UI
+    ├── Reports         # Report UI
+    ├── Settings        # Settings UI
+    ├── Shell           # Main navigation/shell
+    └── Timer           # Timer state controller
+```
